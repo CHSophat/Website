@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Payment Card</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .qr-card {
+      max-width: 350px;
+      margin: auto;
+      margin-top: 50px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    .qr-code {
+      text-align: center;
+    }
+    .qr-code img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card qr-card">
+      <div class="card-body">
+        <h5 class="card-title text-center">Scan to Pay</h5>
+        <div class="qr-code">
+          <!-- Replace the src with your QR code image URL -->
+          <img src="https://image-charts.com/chart?chs=200x200&cht=qr&chl=This%20is%20so%20awesome&choe=UTF-8&icqrb=CAF3C37C" alt="QR Code">
+        </div>
+        <p class="text-center mt-3">Account: <strong>John Doe</strong></p>
+        <p class="text-center">Amount: <strong>$50.00</strong></p>
+        <div class="d-grid gap-2">
+          <button class="btn btn-primary">Pay Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
